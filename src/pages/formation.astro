@@ -4,6 +4,7 @@ import Card from '../components/Card.astro';
 ---
 
 <Layout title="Formation">
+    <link rel="stylesheet" href="/styles/info.css" slot="style"/>
     <main>
 		<ul role="list" class="link-card-grid">
             <Card
@@ -22,19 +23,31 @@ import Card from '../components/Card.astro';
                 body="Find out which business I collaborated with and in which fashion"
             />
         </ul>
+        <ul>
+            <ol>
+                <h3><strong>Computer Science And Engineering Course </strong><span class="subtitle">with no degree</span><br>
+                    <span class="subtitle">at University of Pisa, Pisa, Italy ()</span>
+                </h3>
+                <ul>
+                    <p>During the course I:</p>
+                    <ol>learned to code in the following languages: JavaScript, MySQL and C++</ol>
+                    <ol>learned to use the following languages: HTML e CSS</ol>
+                    <ol>learned the conceptual, logic and physical design of a database as well as the core concepts (queries, mutations, triggers, stored procedures and views)</ol>
+                    <ol>learned basic algorithm concepts (complexity, greedy algorithms) and common data structures (stacks, queues, hash tables, trees, graphs)</ol>
+                    <ol>learned calculus fundamentals</ol>
+                </ul>
+            </ol>
+            <ol>
+                <h3><strong>Network And System Administration Course</strong><br>
+                    <span class="subtitle">at Formatica S.c.a.r.l. Pisa, Italy ()</span>
+                </h3>
+                <ul>
+                    <p>During the course I learned/practiced:</p>
+                    <ol>the following programming languages: Bash, Java</ol>
+                    <ol>The following tools: Docker, GitLab as a tool for the CI/CD, Wireshark, Packet Tracer</ol>
+                    <ol>The use of the OpenSSL library for the creation of certificates and private/public keys</ol>
+                </ul>
+            </ol>
+        </ul>
     </main>
 </Layout>
-
-<style>
-	main {
-		margin: auto;
-		padding: 1em;
-	}
-
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>

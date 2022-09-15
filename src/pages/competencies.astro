@@ -3,7 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
 
-<Layout title="Competences">
+<Layout title="Competencies"> 
+    <link rel="stylesheet" href="/styles/info.css" slot="style"/>
     <main>
 		<ul role="list" class="link-card-grid">
             <Card
@@ -24,23 +25,23 @@ import Card from '../components/Card.astro';
         </ul>
         <ul>
             <ol>
-                <h3><strong class="ema-gradient">BackEnd Development</strong></h3>
+                <h3><strong>BackEnd Development</strong></h3>
                 <p>ASP.NET Core, C#, Python, SQL, Database Design</p>
             </ol>
             <ol>
-                <h3><strong class="ema-gradient">FrontEnd Development</strong></h3>
+                <h3><strong>FrontEnd Development</strong></h3>
                 <p>JavaScript, TypeScript, Angular, HTML, CSS, Astro</p>
             </ol>
             <ol>
-                <h3><strong class="ema-gradient">Software Development</strong></h3>
+                <h3><strong>Software Development</strong></h3>
                 <p>Git, Docker, Bash, Linux environment</p>
             </ol>
             <ol>
-                <h3><strong class="ema-gradient">Cybersecurity</strong></h3>
+                <h3><strong>Cybersecurity</strong></h3>
                 <p>Wireshark</p>
             </ol>
             <ol>
-                <h3><strong class="ema-gradient">Other</strong></h3>
+                <h3><strong>Other</strong></h3>
                 <p>C++, GraphQL</p>
             </ol>
             <ol>
@@ -52,35 +53,7 @@ import Card from '../components/Card.astro';
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1em;
-	}
-
-    ol h3 strong {
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position-y: 100%;
-    }
-
 	.astro-gradient {
 		background-image: linear-gradient(0deg, #4f39fa, #da62c4);
-	}
-
-	.ema-gradient {
-		background-image: linear-gradient(0deg, #580258, #d1cc8b);
-	}
-
-	.subtitle {
-		opacity: 0.5;
-		font-size: 75%;
-	}
-
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
 	}
 </style>
