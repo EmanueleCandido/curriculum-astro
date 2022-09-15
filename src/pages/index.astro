@@ -7,7 +7,7 @@ import Card from '../components/Card.astro';
 	<main>
 		<h1>
 			<strong>Emanuele <span class="gradient ema-gradient">Candido</span></strong>
-			Curriculum Vitae
+			<span class="subtitle">Curriculum</span>
 		</h1>
 		<p>- built in <span class="gradient astro-gradient">Astro!</span></p>
 		<blockquote>
@@ -46,6 +46,11 @@ import Card from '../components/Card.astro';
 		margin: auto;
 		padding: 1em;
 		max-width: 120ch;
+	}
+
+	.subtitle {
+		opacity: 0.5;
+		font-size: 75%;
 	}
 
 	.gradient {
