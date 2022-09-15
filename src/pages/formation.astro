@@ -5,11 +5,23 @@ import Card from '../components/Card.astro';
 
 <Layout title="Formation">
     <main>
-        <Card
-            href="/"
-            title="Back"
-            body="Keep exploring"
-        />
+		<ul role="list" class="link-card-grid">
+            <Card
+                href="/"
+                title="Back"
+                body="Keep exploring"
+            />
+			<Card
+				href="/competencies/"
+				title="Competencies"
+				body="Here you can find my main techical strenghts and focuses. Be my guest!"
+			/>
+            <Card
+                href="/experiences/"
+                title="Work History"
+                body="Find out which business I collaborated with and in which fashion"
+            />
+        </ul>
     </main>
 </Layout>
 
@@ -17,5 +29,12 @@ import Card from '../components/Card.astro';
 	main {
 		margin: auto;
 		padding: 1em;
+	}
+
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
 	}
 </style>

@@ -5,17 +5,34 @@ import Card from '../components/Card.astro';
 
 <Layout title="Experiences">
     <main>
-        <Card
-            href="/"
-            title="Back"
-            body="Keep exploring"
-        />
+		<ul role="list" class="link-card-grid">
+            <Card
+                href="/"
+                title="Back"
+                body="Keep exploring"
+            />
+			<Card
+				href="/competencies/"
+				title="Competencies"
+				body="Here you can find my main techical strenghts and focuses. Be my guest!"
+			/>
+            <Card
+                href="/formation/"
+                title="Formation"
+                body="Discover more about my formation background"
+            />
+        </ul>
         <ul>
             <ol>
                 <h3><strong>FullStack Developer</strong><br>
                     <span class="subtitle">at Hyntelo s.r.l., Pisa, Italy (July 2022 - Current Position)</span>
                 </h3>
-                <p></p>
+                <ul>
+                    <p>I am working mainly at:</p>
+                    <ol>Debugging and refactoring an Angular FrontEnd and an ASP.Net Core BackEnd</ol>
+                    <ol>Query optimization</ol>
+                    <ol>Developing automated tests in C#, using xunit, for an ASP.Net Core BackEnd</ol>
+                </ul>
             </ol>
             <ol>
                 <h3><strong>BackEnd Developer</strong><br>
@@ -61,7 +78,7 @@ import Card from '../components/Card.astro';
 		margin: auto;
 		padding: 1em;
 	}
-    
+
     ol h3 strong {
         background-image: linear-gradient(45deg, #580258, #d1cc8b 30%, var(--color-border) 60%);
 		-webkit-background-clip: text;
@@ -73,5 +90,12 @@ import Card from '../components/Card.astro';
 	.subtitle {
 		opacity: 0.5;
 		font-size: 75%;
+	}
+
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
 	}
 </style>
