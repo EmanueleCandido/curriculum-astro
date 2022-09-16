@@ -9,7 +9,7 @@ import Card from '../components/Card.astro';
 			<strong>Emanuele <span class="gradient ema-gradient">Candido</span></strong>
 			<span class="subtitle">Curriculum</span>
 		</h1>
-		<p>- built in <span class="gradient astro-gradient">Astro!</span></p>
+		<p class="gradient astro-gradient">Built in Astro!</p>
 		<blockquote>
 			Hi! I am a Web Developer with a preference for Backend Development:<br>
             I love innovation, learning and work environments which reward competence 
@@ -86,5 +86,12 @@ import Card from '../components/Card.astro';
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
 		gap: 1rem;
 		padding: 0;
+	}
+
+	blockquote {
+		background-color: #ffff;
+		border-radius: 0.5em;
+		display: flex;
+		padding: 0.5em;
 	}
 </style>

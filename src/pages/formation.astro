@@ -24,36 +24,40 @@ import Card from '../components/Card.astro';
             />
         </ul>
         <ul>
-            <li>
-                <h3><strong>Computer Science And Engineering Course </strong><span class="subtitle">with no degree</span><br>
-                    <span class="subtitle">at University of Pisa, Pisa, Italy ()</span>
-                </h3>
-                <ul>
-                    During the course I:
-                    <li>learned to code in the following languages: JavaScript, MySQL and C++</li>
-                    <li>learned to use the following languages: HTML e CSS</li>
-                    <li>learned the conceptual, logic and physical design of a database as well as the core concepts (queries, mutations, triggers, stored procedures and views)</li>
-                    <li>learned basic algorithm concepts (complexity, greedy algorithms) and common data structures (stacks, queues, hash tables, trees, graphs)</li>
-                    <li>learned calculus fundamentals</li>
-                </ul>
-            </li>
-            <li>
-                <h3><strong>Network And System Administration Course</strong><br>
-                    <span class="subtitle">at Formatica S.c.a.r.l. Pisa, Italy ()</span>
-                </h3>
-                <ul>
-                    During the course I learned/practiced:
-                    <li>the following programming languages: Bash, Java</li>
-                    <li>The following tools: Docker, GitLab as a tool for the CI/CD, Wireshark, Packet Tracer</li>
-                    <li>The use of the OpenSSL library for the creation of certificates and private/public keys</li>
-                </ul>
-            </li>
+            <li class="ccard">
+                <article>
+                    <h3><strong>Computer Science And Engineering Course </strong><span class="subtitle">with no degree</span><br>
+                        <span class="subtitle">at University of Pisa, Pisa, Italy ()</span>
+                    </h3>
+                    <ul>
+                        During the course I:
+                        <li>learned to code in the following languages: JavaScript, MySQL and C++</li>
+                        <li>learned to use the following languages: HTML e CSS</li>
+                        <li>learned the conceptual, logic and physical design of a database as well as the core concepts (queries, mutations, triggers, stored procedures and views)</li>
+                        <li>learned basic algorithm concepts (complexity, greedy algorithms) and common data structures (stacks, queues, hash tables, trees, graphs)</li>
+                        <li>learned calculus fundamentals</li>
+                    </ul>
+                </article>
+            </li><br>
+            <li class="ccard">
+                <article>
+                    <h3><strong>Network And System Administration Course</strong><br>
+                        <span class="subtitle">at Formatica S.c.a.r.l. Pisa, Italy ()</span>
+                    </h3>
+                    <ul>
+                        During the course I learned/practiced:
+                        <li>the following programming languages: Bash, Java</li>
+                        <li>The following tools: Docker, GitLab as a tool for the CI/CD, Wireshark, Packet Tracer</li>
+                        <li>The use of the OpenSSL library for the creation of certificates and private/public keys</li>
+                    </ul>
+                </article>
+            </li><br>
         </ul>
     </main>
 </Layout>
 
 <style>
     li ul {
-        list-style: url('/images/book.svg')
+        list-style: url('/images/book.svg');
     }
 </style>

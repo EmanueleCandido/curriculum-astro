@@ -13,7 +13,7 @@ li h3 strong {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-size: 300%;
+    background-size: 400% 500%;
     background-position-y: 100%;
 	animation: pulse 4s ease-in-out infinite;
 }
@@ -38,4 +38,16 @@ li h3 strong {
     grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
     gap: 1rem;
     padding: 0;
+}
+
+.ccard {
+    display: block;
+    border-radius: 0.5em;
+    max-width: 62em;
+}
+
+article {
+    border-radius: 0.5em;
+    background-color: #ffff;
+    padding: 0.05em 0.7em 0.7em 0.7em;
 }
