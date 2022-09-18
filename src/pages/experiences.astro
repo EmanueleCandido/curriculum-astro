@@ -29,12 +29,14 @@ import Card from '../components/Card.astro';
                     <h3><strong>FullStack Developer</strong><br>
                         <span class="subtitle">at Hyntelo s.r.l., Pisa, Italy (July 2022 - Current Position)</span>
                     </h3>
-                    <ul>
+                    <section>
                         <p>I am working mainly at:</p>
-                        <li>Debugging and refactoring an Angular FrontEnd and an ASP.Net Core BackEnd</li>
-                        <li>Query optimization</li>
-                        <li>Developing automated tests in C#, using xunit, for an ASP.Net Core BackEnd</li>
-                    </ul>
+                        <ul>
+                            <li>Debugging and refactoring an Angular FrontEnd and an ASP.Net Core BackEnd</li>
+                            <li>Query optimization</li>
+                            <li>Developing automated tests in C#, using xunit, for an ASP.Net Core BackEnd</li>
+                        </ul>
+                    </section>
                 </article>
             </li><br>
             <li class="ccard">
@@ -42,14 +44,16 @@ import Card from '../components/Card.astro';
                     <h3><strong>BackEnd Developer</strong><br>
                          <span class="subtitle">at Geckosoft s.r.l., Pisa, Italy (September 2021 - November 2021)</span>
                     </h3>
-                    <ul>
+                    <section>
                         <p>During the experience I worked mainly at:</p>
-                        <li>Developing new features in ASP.NET Core</li>
-                        <li>Developing automated tests in TypeScript, using Cypress in particular, for the aforementioned features</li>
+                        <ul>
+                            <li>Developing new features in ASP.NET Core</li>
+                            <li>Developing automated tests in TypeScript, using Cypress in particular, for the aforementioned features</li>
+                        </ul>
                         <p>In addition to that, I also set up a VPN (WireGuard in particular) and worked with Docker to set up an independent registry</p>
                         <p>Other tools used were: Git, GitHub for CI and TeamCity to manage the CI builds</p>
                         <p>I also became familiar with Agile methodologies</p>
-                    </ul>
+                    </section>
                 </article>
             </li><br>
             <li class="ccard">
@@ -57,12 +61,14 @@ import Card from '../components/Card.astro';
                     <h3><strong>Junior System Administrator</strong><br>
                         <span class="subtitle">at Iamboo s.r.l., Pontedera, Pisa, Italy (June 2021 - September 2021)</span>
                     </h3>
-                    <ul>
+                    <section>
                         <p>During the internship I worked mainly at:</p>
-                        <li>Developing scripts to manage the filesystem in Python and Bash</li>
-                        <li>Creating and managing virtual environments, such as Virtual Machines and Containers</li>
-                        <li>Analyzing network packets with Wireshark, especially layer 3 and layer 4 packets</li>
-                    </ul>
+                        <ul>
+                            <li>Developing scripts to manage the filesystem in Python and Bash</li>
+                            <li>Creating and managing virtual environments, such as Virtual Machines and Containers</li>
+                            <li>Analyzing network packets with Wireshark, especially layer 3 and layer 4 packets</li>
+                        </ul>
+                    </section>
                 </article>
             </li><br>
             <li class="ccard">
@@ -70,12 +76,14 @@ import Card from '../components/Card.astro';
                     <h3><strong>Junior FrontEnd Developer</strong><br>
                         <span class="subtitle">at Nextworks s.r.l., S. Piero a Grado, Pisa, Italy (September 2019 - April 2020)</span>
                     </h3>
-                    <ul>
+                    <section>
                         <p>During the internship I worked mainly at:</p>
-                        <li>Developing the frontend of web pages with the Angular.js framework</li>
-                        <li>Developing the backend of those pages in Python using Tornado</li>
+                        <ul>
+                            <li>Developing the frontend of web pages with the Angular.js framework</li>
+                            <li>Developing the backend of those pages in Python using Tornado</li>
+                        </ul>
                         <p>Other languages and tools used during the internship: Git for versioning and VirtualBox for system virtualization</p>
-                    </ul>
+                    </section>
                 </article>
             </li>
         </ul>
@@ -83,7 +91,7 @@ import Card from '../components/Card.astro';
 </Layout>
 
 <style>
-    li ul {
+    section ul {
         list-style: url('/images/cog.svg');
     }
 
