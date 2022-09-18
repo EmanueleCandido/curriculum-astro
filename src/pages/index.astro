@@ -10,7 +10,7 @@ import Card from '../components/Card.astro';
 			<span class="subtitle">Curriculum</span>
 		</h1>
 		<p class="gradient astro-gradient">Built in Astro!</p>
-		<blockquote class="section">
+		<blockquote>
 			Hi! I am a Web Developer with a preference for Backend Development:<br>
             I love innovation, learning and work environments which reward competence 
             without forgetting the importance of a cohesive team!<br>
@@ -33,12 +33,14 @@ import Card from '../components/Card.astro';
 				body="Discover more about my education background"
 			/>
 		</ul>
-		<article class="section">
-			<p>Contact me at my LinkedIn profile:</p>
-			<p style="padding-left: 0.2em;">
-				<a href='https://www.linkedin.com/in/emanuele-candido/'>Emanuele Candido</a>
-			</p>
-		</article>
+		<section>
+			<div>
+				<p>Contact me at my LinkedIn profile:</p>
+				<p style="padding-left: 0.2em;">
+					<a href='https://www.linkedin.com/in/emanuele-candido/'>Emanuele Candido</a>
+				</p>
+			</div>
+		</section>
 	</main>
 </Layout>
 
@@ -94,10 +96,27 @@ import Card from '../components/Card.astro';
 		padding: 0;
 	}
 
-	.section {
-		background-color: #ffff;
+	blockquote {
+		background-color: white;
 		border-radius: 0.5em;
 		display: flex;
 		padding: 0.5em;
+		width: fit-content;
+	}
+
+	section {
+		background-image: linear-gradient(45deg, #580258, #d1cc8b 30%, var(--color-border) 60%);
+		border-radius: 0.5em;
+		padding: 0.15em;
+		width: fit-content;
+	}
+
+	div {
+		display: flex;
+		background-color: white;
+		border-radius: 0.35em;
+		opacity: 0.8;
+		padding-left: 0.6em;
+		padding-right: 0.6em;
 	}
 </style>

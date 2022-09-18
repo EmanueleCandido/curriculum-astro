@@ -43,7 +43,9 @@ li h3 strong {
 .ccard {
     display: block;
     border-radius: 0.5em;
-    max-width: 62em;
+    width: fit-content;
+    min-width: 30em;
+    max-width: 60em;
 }
 
 article {
