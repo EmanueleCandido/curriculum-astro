@@ -7,9 +7,8 @@ import Card from '../components/Card.astro';
 	<main>
 		<h1>
 			<strong>Emanuele <span class="gradient ema-gradient">Candido</span></strong>
-			<span class="subtitle">Curriculum</span>
 		</h1>
-		<p class="gradient astro-gradient">Built in Astro!</p>
+		<p class="gradient astro-gradient centered">Built in Astro!</p>
 		<blockquote>
 			Hi! I am a Web Developer with a preference for Backend Development:<br>
             I love innovation, learning and work environments which reward competence 
@@ -48,6 +47,7 @@ import Card from '../components/Card.astro';
 	h1 {
 		margin: 2rem 0;
 		font-weight: 400;
+		text-align: center;
 	}
 
 	main {
@@ -96,12 +96,19 @@ import Card from '../components/Card.astro';
 		padding: 0;
 	}
 
+	.centered {
+		text-align: center;
+	}
+
 	blockquote {
 		background-color: white;
 		border-radius: 0.5em;
 		display: flex;
 		padding: 0.5em;
 		width: fit-content;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	section {
@@ -109,6 +116,8 @@ import Card from '../components/Card.astro';
 		border-radius: 0.5em;
 		padding: 0.15em;
 		width: fit-content;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	div {
