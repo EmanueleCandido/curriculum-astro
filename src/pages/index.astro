@@ -1,122 +1,182 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Emanuele Candido">
-    <link rel="stylesheet" href="/curriculum-astro/styles/general.css" slot="style"/>
-	<main>
-		<h1>
-			<strong>Emanuele <span class="gradient ema-gradient">Candido</span></strong>
-		</h1>
-		<p class="gradient astro-gradient centered">Built in Astro!</p>
-		<blockquote>
-			Hi! I am a Web Developer with a preference for Backend Development:<br>
-            I love innovation, learning and work environments which reward competence 
-            without forgetting the importance of a cohesive team!<br>
-		</blockquote>
-		<br>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="/curriculum-astro/competencies/"
-				title="Competencies"
-				body="Here you can find my main techical strenghts and focuses. Be my guest!"
-			/>
-			<Card
-				href="/curriculum-astro/experiences/"
-				title="Work History"
-				body="Find out which business I collaborated with and in which fashion"
-			/>
-			<Card
-				href="/curriculum-astro/education/"
-				title="Education"
-				body="Discover more about my education background"
-			/>
-		</ul>
-		<section>
-			<div>
-				<p>Contact me at my LinkedIn profile:</p>
-				<p style="padding-left: 0.2em;">
-					<a href='https://www.linkedin.com/in/emanuele-candido/'>Emanuele Candido</a>
-				</p>
-			</div>
-		</section>
-	</main>
+  <link
+    rel="stylesheet"
+    href="/curriculum-astro/styles/general.css"
+    slot="style"
+  />
+  <main>
+    <section class="hero-section">
+      <h1>Emanuele Candido</h1>
+	  <h3 class="professional-title">Web developer</h3>
+    </section>
+	<section class="info job-experiences">
+        <h2 class="section-title">Work Experiences</h2>
+        <article>
+            <h3>FullStack Developer</h3>
+            <p class="subtitle">at Hyntelo s.r.l., Pisa, Italy (July 2022 - Current Position)</p>
+            <section>
+                <p>I am working mainly with:</p>
+                <ul>
+                    <li>Angular FrontEnds</li>
+                    <li>ASP.Net Core BackEnds</li>
+                    <li>C# unit tests with Xunit</li>
+                    <li>GraphQL</li>
+                    <li>MySQL databasses</li>
+                    <li>Azure</li>
+                    <li>Python scripts (pandas)</li>
+                </ul>
+            </section>
+        </article>
+        <article>
+            <h3>BackEnd Developer</h3>
+            <p class="subtitle">at Geckosoft s.r.l., Pisa, Italy (September 2021 - November 2021)</p>
+            <section>
+                <p>During the experience I worked mainly at:</p>
+                <ul>
+                    <li>Developing new features in ASP.NET Core</li>
+                    <li>Developing automated tests in TypeScript, using Cypress in particular, for the aforementioned
+                        features</li>
+                </ul>
+                <p>In addition to that, I also set up a VPN (WireGuard in particular) and worked with Docker to set up
+                    an
+                    independent registry</p>
+                <p>Other tools used were: Git, GitHub for CI and TeamCity to manage the CI builds</p>
+                <p>I also became familiar with Agile methodologies</p>
+            </section>
+        </article>
+        <article>
+            <h3>Junior System Administrator</h3>
+            <p class="subtitle">at Iamboo s.r.l., Pontedera, Pisa, Italy (June 2021 - September 2021)</p>
+            <section>
+                <p>During the internship I worked mainly at:</p>
+                <ul>
+                    <li>Developing scripts to manage the filesystem in Python and Bash</li>
+                    <li>Creating and managing virtual environments, such as Virtual Machines and Containers</li>
+                    <li>Analyzing network packets with Wireshark, especially layer 3 and layer 4 packets</li>
+                </ul>
+            </section>
+        </article>
+        <article>
+            <h3>Junior FrontEnd Developer</h3>
+            <p class="subtitle">at Nextworks s.r.l., S. Piero a Grado, Pisa, Italy (September 2019 - April
+                2020)</p>
+            <section>
+                <p>During the internship I worked mainly at:</p>
+                <ul>
+                    <li>Developing the frontend of web pages with the Angular.js framework</li>
+                    <li>Developing the backend of those pages in Python using Tornado</li>
+                </ul>
+                <p>Other languages and tools used during the internship: Git for versioning and VirtualBox for system
+                    virtualization</p>
+            </section>
+        </article>
+    </section>
+    <section class="info learn-experiences">
+        <h2 class="section-title">Education</h2>
+        <article>
+            <h3>Computer Science And Engineering Course <span>with no degree</span></h3>
+            <p class="subtitle">at University of Pisa, Pisa, Italy (2016-2018)</p>
+            <p>During the course I learned:</p>
+            <ul>
+                <li>to code in the following languages: JavaScript, MySQL and C++</li>
+                <li>to use the following languages: HTML e CSS</li>
+                <li>the conceptual, logic and physical design of a database as well as the core concepts (queries,
+                    mutations, triggers, stored procedures and views)</li>
+                <li>basic algorithm concepts (complexity, greedy algorithms) and common data structures (stacks, queues,
+                    hash tables, trees, graphs)</li>
+                <li>calculus fundamentals</li>
+            </ul>
+        </article>
+        <article>
+            <h3>Network And System Administration Course</h3>
+            <p class="subtitle">at Formatica S.c.a.r.l. Pisa, Italy (2020-2021)</p>
+            <p>During the course I learned/practiced:</p>
+            <ul>
+                <li>the following programming languages: Bash, Java</li>
+                <li>the following tools: Docker, GitLab as a tool for the CI/CD, Wireshark, Packet Tracer</li>
+                <li>the use of the OpenSSL library for the creation of certificates and private/public keys</li>
+            </ul>
+        </article>
+    </section>
+	<section class="info other-info">
+        <h2>Other info</h2>
+        <p>English:</p>
+        <ul>
+            <li>Written comprehension: C2</li>
+            <li>Written production: C1</li>
+            <li>Oral comprehension: C2</li>
+            <li>Oral production: C1</li>
+        </ul>
+    </section>
+	<section class="info download-info">
+		<p>Download the PDF version of this curriculum →</p>
+		<a href="pdf/curriculum.pdf" download="EmanueleCandido.pdf"><img src="images/document.svg" alt="download-icon"/></a>
+	</section>
+    <footer class="contacts">
+      <article class="contact">
+        <img src="images/email.svg" alt="linkedin-icon" />
+        <p class="bold">emanuele.candido.work@gmail.com</p>
+      </article>
+      <article class="contact">
+        <img src="images/linkedin.svg" alt="linkedin-icon" />
+        <a class="bold" href="https://www.linkedin.com/in/emanuele-candido/">
+          Linkedin Profile
+        </a>
+      </article>
+      <article class="contact">
+        <img src="images/phone.svg" alt="linkedin-icon" />
+        <p class="bold">3405174233</p>
+      </article>
+    </footer>
+  </main>
 </Layout>
 
 <style>
-	h1 {
-		margin: 2rem 0;
-		font-weight: 400;
-		text-align: center;
-	}
-
-	main {
-		margin: auto;
-		padding: 1em;
-		max-width: 120ch;
-	}
-
-	.subtitle {
-		opacity: 0.5;
-		font-size: 75%;
-	}
-
-	.gradient {
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 100% 200%;
-		background-position-y: 100%;
-		border-radius: 0.4rem;
-		animation: pulse 4s ease-in-out infinite;
-	}
-
-	.astro-gradient {
-		font-weight: 600;
-		background-image: linear-gradient(0deg, #4f39fa, #da62c4);
-	}
-
-	.ema-gradient {
-		background-image: linear-gradient(0deg, #580258, #d1cc8b);
-	}
-
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-
-	.centered {
-		text-align: center;
-	}
-
-	blockquote {
-		background-color: white;
-		border-radius: 0.5em;
-		display: flex;
-		padding: 0.5em;
-		width: fit-content;
-		text-align: center;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	section {
-		background-image: linear-gradient(45deg, #580258, #d1cc8b 30%, var(--color-border) 60%);
-		border-radius: 0.5em;
-		padding: 0.15em;
-		width: fit-content;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	div {
-		display: flex;
-		background-color: white;
-		border-radius: 0.35em;
-		opacity: 0.8;
-		padding-left: 0.6em;
-		padding-right: 0.6em;
-	}
+  .hero-section {
+    background-color: #141414;
+    padding: 60px 0px 30px;
+    display: flex;
+	flex-direction: column;
+    justify-content: center;
+  }
+  .professional-title {
+    color: #dedede;
+    text-align: center;
+  }
+  .info{
+	padding: 0 10px 0 40px;
+  }
+  .download-info {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	column-gap: 5px;
+  }
+  .contacts {
+    padding: 4px 20px;
+    display: flex;
+    justify-content: space-around;
+    column-gap: 20px;
+    flex-wrap: wrap;
+  }
+  .contact {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+  }
+  h1 {
+    color: #dedede;
+    margin: 0;
+    padding: 0 50px;
+    text-align: center;
+  }
+  img {
+    height: 30px;
+  }
 </style>
